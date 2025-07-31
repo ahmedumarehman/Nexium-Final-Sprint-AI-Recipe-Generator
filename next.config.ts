@@ -12,6 +12,13 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  experimental: {
+    serverActions: {
+      bodySizeLimit: "1mb", // or whatever value is appropriate
+      allowedOrigins: ["*"], // allows any origin
+    },
+  },
+
 };
 
 export default nextConfig;
